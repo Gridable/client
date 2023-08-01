@@ -1,7 +1,7 @@
 {
-  "name": "frontend-template-webpack-react",
+  "name": "scaffold-react",
   "version": "1.0.0",
-  "description": "frontend-template-webpack-react",
+  "description": "Creating scaffold template for react app",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --env port=3000",
@@ -13,7 +13,8 @@
     "lint:scss": "stylelint src/**/*.scss",
     "lint:scss:fix": "stylelint src/**/*.scss --fix",
     "format": "prettier --write src !**/*.{scss,css,json}",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:unit": "jest --config ./config/jest/jest.config.ts"
   },
   "keywords": [],
   "author": "Karagoishin Zhaslan",
@@ -26,6 +27,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@svgr/webpack": "^6.5.1",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/jest": "^29.5.3",
     "@types/node": "^18.14.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
@@ -41,6 +43,8 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.0",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss": "^8.4.21",
     "prettier": "^2.8.8",
