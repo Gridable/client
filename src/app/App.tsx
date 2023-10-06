@@ -7,7 +7,7 @@ export const App = () => {
     return (
         <div className={'app'}>
             <Header />
-            <ToolBar/>
+            <ToolBar />
             <Suspense fallback={'loading..'}>
                 <AppRouter />
             </Suspense>
